@@ -1,8 +1,9 @@
 name: WordPress Content Sync
 
 on:
-  repository_dispatch:
-    types: [wordpress_update]
+  schedule:
+    - cron: '0 */2 * * *'  # Executa a cada 2 horas
+  workflow_dispatch:  # Permite também execução manual
 
 jobs:
   sync-content:
