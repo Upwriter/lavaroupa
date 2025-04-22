@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Tudo Lava Roupa | Reviews e Dicas sobre Máquinas de Lavar</title>
+    <meta name="description" content="Encontre as melhores máquinas de lavar roupa com reviews detalhados, comparativos e dicas de uso. Ajudamos você a escolher a máquina ideal para sua casa.">
+    <meta name="keywords" content="máquina de lavar, reviews, comparativos, dicas de lavagem, lava e seca, tanquinho">
+
+    <meta name="author" content="Tudo Lava Roupa">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+	
+	<!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="images/logo.svg" rel="shortcut icon" type="image/svg+xml">
+    <link href="images/logo.svg" rel="apple-touch-icon">
+    <link href="images/logo.svg" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/logo.svg" rel="apple-touch-icon" sizes="114x114">
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .top {
+            background-color: #f5f2e9 !important;
+        }
+        .top .flat-information li a,
+        .social-links a {
+            color: #1d4b4f !important;
+        }
+        .header {
+            background-color: #f5f2e9 !important;
+        }
+        .header #logo {
+            display: flex;
+            align-items: center;
+            background: none !important;
+            padding: 0 !important;
+        }
+        .header #logo a {
+            display: flex;
+            align-items: center;
+            background: none !important;
+            padding: 0 !important;
+        }
+        .logo-text {
+            color: #1d4b4f;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+        .header #logo img {
+            max-height: 60px;
+            width: auto;
+        }
+        .mainnav > ul > li > a {
+            color: #1d4b4f !important;
+        }
+        .lista-servicos {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+        .lista-servicos li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            color: #666;
+            font-size: 14px;
+        }
+        .lista-servicos li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #32bfc0;
+            font-weight: bold;
+        }
+        .iconbox .box-content {
+            min-height: 200px;
+        }
+        /* Estilo para os textos do slider */
+        .tp-caption.title-slide {
+            color: #1d4b4f !important;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .tp-caption.desc-slide {
+            color: #1d4b4f !important;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .tp-caption.content-slide {
+            color: #1d4b4f !important;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        /* Estilo para os botões do slider */
+        .flat-button-slider {
+            transition: all 0.3s ease !important;
+        }
+        
+        .flat-button-slider:hover {
+            background-color: #1d4b4f !important;
+            transform: scale(1.1) !important;
+        }
+        
+        .flat-button-slider a {
+            transition: all 0.3s ease !important;
+        }
+        
+        .flat-button-slider:hover a {
+            color: #ffffff !important;
+        }
+        
+        /* Removendo o botão de menu mobile */
+        .btn-menu {
+            display: none !important;
+        }
+        
+        /* Estilo para os itens do menu principal */
+        .mainnav > ul > li > a {
+            color: #1d4b4f !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .mainnav > ul > li > a:hover {
+            color: #1a237e !important; /* Azul escuro no hover */
+        }
+        
+        .mainnav > ul > li.active > a {
+            color: #1a237e !important; /* Azul escuro quando ativo */
+        }
+        
+        /* Removendo submenus */
+        .mainnav > ul > li .submenu {
+            display: none !important;
+        }
+        
+        /* Removendo a classe home do primeiro item */
+        .mainnav > ul > li.home {
+            background: none !important;
+        }
+
+        /* Estilos para o menu mobile */
+        .mobile-menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 998;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background: #f5f2e9;
+            z-index: 999;
+            transition: right 0.3s ease;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu .close-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #1d4b4f;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .mobile-menu .menu {
+            list-style: none;
+            padding: 0;
+            margin: 60px 0 0 0;
+        }
+
+        .mobile-menu .menu li {
+            margin-bottom: 15px;
+        }
+
+        .mobile-menu .menu a {
+            color: #1d4b4f;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(29, 75, 79, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu .menu a:hover {
+            color: #1a237e;
+            padding-left: 10px;
+        }
+
+        .btn-menu {
+            display: none !important;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 10px;
+            margin-left: 15px;
+        }
+
+        .btn-menu span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: #1d4b4f;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        /* Responsividade */
+        @media (max-width: 991px) {
+            .btn-menu {
+                display: block !important;
+            }
+
+            .nav-wrap {
+                display: none !important;
+            }
+
+            .header #logo {
+                flex: 1;
+            }
+
+            .header-wrap {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header #logo img {
+                height: 40px;
+            }
+
+            .header #logo .logo-text div:first-child {
+                font-size: 24px;
+            }
+
+            .header #logo .logo-text div:last-child {
+                font-size: 18px;
+            }
+
+            .page-title {
+                padding-top: 100px !important;
+            }
+        }
+    </style>
+</head>                                 
+<body class="header_sticky"> 
+    <!-- Preloader -->
+    <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading</h2>
+        </div>
+    </section>   
+   
+        <div class="site-wrapper ">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="flat-one-halft">                      
+                                <ul class="flat-information">
+                                </ul>                    
+                            </div><!-- /.col-md-6 -->       
+                            <div class="flat-one-halft">
+                                <div class="social-links text-right">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-reddit"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                </div>
+                            </div> 
+                        </div>       
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.top -->
+
+            <!-- Header -->            
+            <header id="header" class="header header-style3 logo-2 clearfix">
+                <div class="container">
+                    <div class="row">                 
+                        <div class="header-wrap clearfix">
+                            <div class="col-md-12" style="display: flex; align-items: center; justify-content: space-between;">
+                                <div id="logo" class="logo">
+                                    <a href="index.html" rel="home">
+                                        <div style="display: flex; align-items: center;">
+                                            <img src="images/logo.svg" alt="Tudo Lava Roupa" style="height: 50px; width: auto;">
+                                            <div style="margin-left: 10px;">
+                                                <div style="color: #1d4b4f; font-size: 32px; font-weight: bold; line-height: 1.2;">Tudo</div>
+                                                <div style="color: #1d4b4f; font-size: 24px; line-height: 1;">Lava Roupa</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav-wrap">                            
+                                    <nav id="mainnav" class="mainnav">
+                                        <ul class="menu"> 
+                                            <li><a href="index.html">Início</a></li>
+                                            <li><a href="sobre-nos.html">Sobre nós</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="contato.html">Contato</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <button class="btn-menu" id="openMenu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Menu Mobile -->
+            <div class="mobile-menu-overlay" id="menuOverlay"></div>
+            <div class="mobile-menu" id="mobileMenu">
+                <button class="close-menu" id="closeMenu">×</button>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Slider -->
+            <div class="tp-banner-container" id="home">
+                <div class="tp-banner" >
+                    <ul>
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                            <img src="https://images.pexels.com/photos/5591667/pexels-photo-5591667.jpeg" alt="Mulher usando máquina de lavar" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" />
+                            <div class="tp-caption sfl title-slide center" data-x="319" data-y="300" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">
+                                Reviews Especializados
+                            </div>  
+                            <div class="tp-caption sfr desc-slide center" data-x="363" data-y="260" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                               Encontre a máquina de lavar ideal para você
+                            </div>    
+                            <div class="tp-caption sfl flat-button-slider bg-button-slider-32bfc0" data-x="420" data-y="410" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"><a href="blog.html">Ver Reviews</a> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></div>
+                        </li>
+
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                            <img src="https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg" alt="Comparativo de Máquinas" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" />
+                            <div class="tp-caption sfr title-slide center" data-x="0" data-y="250" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">
+                                Comparativos Detalhados
+                            </div>  
+                            <div class="tp-caption sfr desc-slide center" data-x="0" data-y="215" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                               Análises imparciais
+                            </div>    
+
+                            <div class="tp-caption sfr content-slide text-white center" data-x="0" data-y="356" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">
+                            Comparamos as principais marcas e modelos do mercado para<br>ajudar você a fazer a melhor escolha para sua casa e necessidade.
+                            </div>                            
+
+                            <div class="tp-caption sfr flat-button-slider bg-button-slider-32bfc0" data-x="0" data-y="450" data-speed="1000" data-start="2500" data-easing="Power3.easeInOut"><a href="blog.html">Ver Comparativos</a> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></div>
+                        </li>
+
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                            <img src="https://images.pexels.com/photos/5591667/pexels-photo-5591667.jpeg" alt="Dicas de Lavagem" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" />
+                            <div class="tp-caption sfl title-slide center" data-x="605" data-y="255" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">
+                                Dicas e Guias
+                            </div>  
+                            <div class="tp-caption sfr desc-slide center" data-x="605" data-y="215" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                               Aprenda a cuidar melhor das suas roupas
+                            </div>  
+
+                            <div class="tp-caption sfr content-slide text-white center" data-x="605" data-y="356" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">
+                            Confira nossas dicas para melhor aproveitamento da sua<br>máquina de lavar e cuidados com diferentes tipos de tecidos.
+                            </div>                               
+                            <div class="tp-caption sfl flat-button-slider bg-button-slider-32bfc0" data-x="605" data-y="430" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"><a href="blog.html">Ver Dicas</a> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Serviços -->
+            <section class="flat-row about background-color border-bottom">
+                <div class="container">                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="iconbox left style3">                    
+                                <div class="box-header">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <div class="box-title"><a href="#reviews">Reviews Detalhados</a></div>
+                                </div>
+                                <div class="box-content">
+                                   Análises completas das principais máquinas de lavar do mercado, incluindo:
+                                   <ul class="lista-servicos">
+                                       <li>Testes práticos de desempenho</li>
+                                       <li>Avaliação técnica detalhada</li>
+                                       <li>Consumo de água e energia</li>
+                                       <li>Prós e contras de cada modelo</li>
+                                   </ul>
+                                </div>                        
+                            </div><!-- /.iconbox -->                            
+                        </div><!-- /.col-md-4 -->
+
+                        <div class="col-md-4">
+                            <div class="iconbox left style3">                    
+                                <div class="box-header">
+                                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                    <div class="box-title"><a href="#comparativos">Comparativos</a></div>
+                                </div>
+                                <div class="box-content">
+                                   Compare diferentes modelos e marcas para encontrar a máquina ideal:
+                                   <ul class="lista-servicos">
+                                       <li>Comparação de preços</li>
+                                       <li>Análise de recursos</li>
+                                       <li>Consumo de energia</li>
+                                       <li>Capacidade de lavagem</li>
+                                   </ul>
+                                </div>
+                            </div><!-- /.iconbox -->                          
+                        </div><!-- /.col-md-4 -->
+
+                        <div class="col-md-4">
+                            <div class="iconbox left style3">                    
+                                <div class="box-header">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <div class="box-title"><a href="#dicas">Dicas e Guias</a></div>
+                                </div>
+                                <div class="box-content">
+                                   Aprenda a cuidar melhor da sua máquina e roupas:
+                                   <ul class="lista-servicos">
+                                       <li>Manutenção preventiva</li>
+                                       <li>Economia de água e energia</li>
+                                       <li>Cuidados com diferentes tecidos</li>
+                                       <li>Solução de problemas comuns</li>
+                                   </ul>
+                                </div>
+                            </div><!-- /.iconbox -->                            
+                        </div><!-- /.col-md-4 -->               
+                    </div>      
+                </div><!-- /.container -->   
+            </section>  
+
+            <!-- Reviews em Destaque -->
+            <section class="flat-row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-section style2 ">
+                                <h2 class="title">Reviews em Destaque</h2>
+                            </div>
+                            <div class="category-buttons">
+                                <a href="blog.html" class="category-btn">Todos</a>
+                                <a href="categorias/front-load/" class="category-btn">Front Load</a>
+                                <a href="categorias/top-load/" class="category-btn">Top Load</a>
+                                <a href="categorias/lava-seca/" class="category-btn">Lava e Seca</a>
+                                <a href="categorias/tanquinho/" class="category-btn">Tanquinho</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+
+            <!-- Blog -->
+            <section class="flat-row blog parallax parallax5">        
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-section text-center color-white">
+                                <h1 class="title">Últimas do Blog</h1>                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="blog-shortcode blog-carosuel-wrap">
+                                <div class="blog-carosuel">
+                                    <article class="post clearfix">
+                                        <div class="featured-post">
+                                            <ul class="post-meta">
+                                                <li class="date">15</li>
+                                                <li class="month">Mar</li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-post">
+                                            <h2 class="title-post"><a href="#blog1">Como Economizar Água na Lavagem</a></h2> 
+                                            <div class="entry-post excerpt">
+                                                <p>Dicas práticas para reduzir o consumo de água sem comprometer a qualidade da lavagem.</p>
+                                            </div>                         
+                                        </div>
+                                    </article>
+
+                                    <article class="post clearfix">
+                                        <div class="featured-post">
+                                            <ul class="post-meta">
+                                                <li class="date">10</li>
+                                                <li class="month">Mar</li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-post">
+                                            <h2 class="title-post"><a href="#blog2">Guia de Símbolos de Lavagem</a></h2> 
+                                            <div class="entry-post excerpt">
+                                                <p>Aprenda a interpretar os símbolos nas etiquetas das roupas para uma lavagem adequada.</p>
+                                            </div>                         
+                                        </div>
+                                    </article>
+
+                                    <article class="post clearfix">
+                                        <div class="featured-post">
+                                            <ul class="post-meta">
+                                                <li class="date">5</li>
+                                                <li class="month">Mar</li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-post">
+                                            <h2 class="title-post"><a href="#blog3">Manutenção Preventiva</a></h2> 
+                                            <div class="entry-post excerpt">
+                                                <p>Como aumentar a vida útil da sua máquina de lavar com cuidados simples.</p>
+                                            </div>                         
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section> 
+
+            <!-- Estatísticas -->
+            <div class="flat-row bg-black">
+                <div class="container">
+                    <div class="row">                
+                        <div class="col-md-3 col-xs-6">
+                            <div class="flat-counter color-theme">                            
+                                <div class="content-counter">
+                                    <div class="numb-count" data-to="50" data-speed="2000" data-waypoint-active="yes">50</div>
+                                    <div class="name-count">Reviews Realizados</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="flat-counter color-theme">                            
+                                <div class="content-counter">
+                                    <div class="numb-count" data-to="20" data-speed="2000" data-waypoint-active="yes">20</div>
+                                    <div class="name-count">Marcas Analisadas</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="flat-counter color-theme">                            
+                                <div class="content-counter">
+                                    <div class="numb-count" data-to="100" data-speed="2000" data-waypoint-active="yes">100</div>
+                                    <div class="name-count">Artigos Publicados</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="flat-counter color-theme">                            
+                                <div class="content-counter">
+                                    <div class="numb-count" data-to="1000" data-speed="2000" data-waypoint-active="yes">1000</div>
+                                    <div class="name-count">Leitores Mensais</div>
+                                </div>
+                            </div>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="flat-footer">
+                <div class="overlay"></div>
+                <div class="footer-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="social-links">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-reddit"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <div class="copyright-content">
+                                        @tudolavaroupa <span id="currentYear">2025</span> - Direitos Reservados
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.row -->
+                    </div><!-- /.container -->
+                </div>
+
+                <!-- Go Top -->
+                <a class="go-top">            
+                </a> 
+            </div>
+        </div>
+
+        <div id="off-canvas">
+        </div>
+
+    
+    <!-- Javascript -->
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="javascript/jquery.easing.js"></script>    
+    <script type="text/javascript" src="javascript/jquery-waypoints.js"></script> 
+    <script type="text/javascript" src="javascript/jquery-countTo.js"></script>    
+    <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+    <script type="text/javascript" src="javascript/jquery.fitvids.js"></script> 
+    <script type="text/javascript" src="javascript/parallax.js"></script>
+    <script type="text/javascript" src="javascript/imagesloaded.min.js"></script> 
+    <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="javascript/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>   
+    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>   
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            var menuItems = document.querySelectorAll('.mainnav ul.menu li a');
+            
+            menuItems.forEach(function(item) {
+                if (item.getAttribute('href') === currentPage) {
+                    item.parentElement.classList.add('active');
+                }
+            });
+        });
+
+        // Menu Mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('openMenu');
+            const closeBtn = document.getElementById('closeMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('menuOverlay');
+
+            function openMenu() {
+                mobileMenu.classList.add('active');
+                overlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                mobileMenu.classList.remove('active');
+                overlay.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+
+            menuBtn.addEventListener('click', openMenu);
+            closeBtn.addEventListener('click', closeMenu);
+            overlay.addEventListener('click', closeMenu);
+
+            // Fecha o menu ao clicar em um link
+            const menuLinks = mobileMenu.getElementsByTagName('a');
+            for (let link of menuLinks) {
+                link.addEventListener('click', closeMenu);
+            }
+
+            // Fecha o menu ao redimensionar a tela para desktop
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 991) {
+                    closeMenu();
+                }
+            });
+        });
+    </script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="javascript/slider.js"></script>
+</body>
+</html>
